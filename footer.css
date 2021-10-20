@@ -4,10 +4,7 @@
     width: 100%;
     background: var(--celeste);
     min-height: 100px;
-    padding: 20px 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
   }
   
@@ -100,18 +97,7 @@
       background-positon-x: 0px;
     }
   }
-  
-.navbar-nav {
-    display: flex;
-    flex-direction: inherit;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
 
-.nav-link:hover {
-    color: white !important;
-}
 
 @media(max-width:768px) {
     .navbar-nav {
