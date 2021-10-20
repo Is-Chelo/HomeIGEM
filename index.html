@@ -6,14 +6,146 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="carga.css">
 </head>
+<header>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            setTimeout(function () {
+                var carga = document.getElementById('carga');
+                carga.style.visibility = 'hidden';
+                carga.style.opacity = '0';
+                document.getElementById('cuerpo').style.overflow = "auto"
+            }, 4000);
+        }
+    </script>
 
 
-<body>
-    
+    <div id="carga">
+        <div class="cuadro">
+            <video src="VID-20210923-WA0003.mp4" style="width: 300px;" muted loop autoplay></video>
+
+            <div class="overlinea">
+                <div class="linea">dshdfghf</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- NavBar -->
+    <div class="nav-principal">
+        <nav class="navbar navbar-expand-lg navbar-light my-navbar fixed-top   py-4" style="z-index:1000000" id="nav">
+            <div class="container  d-md-flex">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler bg-white" onclick="navBarColor()" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-white"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item hover-nav">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                AWARDS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:Bolivia/Inclusivity">
+                                        INCLUSIVITY</a></p>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://2021.igem.org/Team:Bolivia/Excellence">EXCELLENCE</a></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                TEAMS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item"
+                                        href="https://2021.igem.org/Team:Bolivia/Collaborations">COLLABORATIONS</a></p>
+                                </li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:Bolivia/Team">TEAMS</a>
+                                    </p>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://2021.igem.org/Team:Bolivia/Attributions">ATTRIBUTIONS</a></p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PROJECT
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item"
+                                        href="https://2021.igem.org/Team:Bolivia/Description">DESCRIPTION</a></p>
+                                </li>
+                                <li><a class="dropdown-item" href="https://2021.igem.org/Team:Bolivia/Design">DESIGN</a>
+                                    </p>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://2021.igem.org/Team:Bolivia/Engineering">ENGINEERNING</a></p>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://2021.igem.org/Team:Bolivia/Contribution">CONTRIBUTION</a></p>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://2021.igem.org/Team:Bolivia/LaboratoryProtocols">LAB PROTOCOLS</a>
+                                    </p>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://2021.igem.org/Team:Bolivia/Hardware">HARDWARE</a></p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                HP
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">HUMAN PRACTICES</a></p>
+                                </li>
+                                <li><a class="dropdown-item" href="#">INTEGRATED</a></p>
+                                </li>
+                                <li><a class="dropdown-item" href="#">PROPOSED</a></p>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Education </a></p>
+                                </li>
+                            </ul>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body id="cuerpo">
+
+    <div class="titulo" id="titulo">
+        <h1 class="text-uppercase">Arsemaphore</h1>
+    </div>
     <div class="contenedor-nieve">
         <figure class="nieve"></figure>
         <figure class="nieve"></figure>
@@ -35,37 +167,437 @@
         <figure class="nieve"></figure>
         <figure class="nieve"></figure>
         <figure class="nieve"></figure>
-        
-    
+
+
     </div>
 
     <div class="banner">
-        <div class="container">
+        <div class="container-principal con">
             <div class="scene">
                 <div class="layer">
-                    <img src="img/nubeo1.png"  class="w-100 img1 moveX"  alt="">
-                    <img src="img/nubeo2.png"  class="w-100 img2 move-X "  alt="">
-                    <img src="img/montañas2.png"  class="w-100 img2 "  alt="">
-                    <img src="img/montañas.png"  class="w-100 img2 "  alt="">
-                    <img src="img/montaniaAgua.png"  class="w-100 img2 "  alt="">
-                    <img src="img/montañas3.png"  class="w-100 img2 "  alt="">
-                    <img src="img/montañaarse.png"  class="w-100 img2 "  alt="">
-                    <img src="img/arseSombra.png"  class="w-100 img2 "  alt="">
-                    <img src="img/montañamasLLama.png"  class="w-100 img2 "  alt="">
-                    
+                    <img src="img/nubeo1.png" id="nube1" class="w-100 img1 moveX" alt="">
+                    <img src="img/nubeo2.png" id="nube2" class="w-100  move-X " alt="">
+                    <img src="img/montañas2.png" id="monta2" class="w-100 img2 " data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" alt="">
+                    <img src="img/montañas.png" id="monta1" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                        class="w-100 img2 " alt="">
+                    <img src="img/montaniaAgua.png" id="montaagua" class="w-100 img2 " alt="">
+                    <img src="img/montañas3.png" id="monta3" class="w-100 img2 " alt="">
+                    <img src="img/montañaarse.png" id="montaarse" class="w-100 img2 " alt="">
+                    <img src="img/arseSombra.png" id="arse" class="w-100 img2 " alt="">
+                    <img src="img/montañamasLLama.png" id="montallama" class="w-100 img2 " alt="">
+
 
                 </div>
             </div>
         </div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="container-texto">
+        <div class="container py-5 text-white" data-aos="fade-up">
+            <p>Heavy metal poisoning has become a serious problem worldwide. Heavy metals are high atomic weight
+                elements that can be accumulated in different ecosystems at dangerous levels, resulting in the
+                contamination of the environment.
+            </p>
+        </div>
+    </div>
+    <img src="imgbanner2/Nuevoproyecto.png" id="" data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine" data-aos-delay="300" class=" d-none d-lg-block logo " alt="">
+
+    <div class="banner-2">
+        <div class="container-segundarario con">
+            <div class="scene">
+                <div class="layer">
+                    <img src="imgbanner2/nubes1.png" id="nubesb2" class="w-100  move-X " alt="">
+                    <img src="imgbanner2/montañas.png" id="montab2" class="w-100 img2  " data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" alt="">
+                    <img src="imgbanner2/aguaMontañas.png" id="aguab2 " data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" class="w-100 img2 " alt="">
+                    <img src="imgbanner2/arseMonta.png" id="arseb2" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-delay="800" class="w-100 img2 " alt="">
+                    <img src="imgbanner2/arsesinlogo.png" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-delay="800" id="" class="w-100 img2 d-none d-lg-block"
+                        alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-texto">
+        <div class="container py-5 text-white" data-aos="fade-up">
+            <p>Arsenic and high concentrations of metals can affect the quality of the surrounding soils, rivers,
+                aquifers, and material abandoned along these rivers from former mining operations. The geological
+                characteristics of the Bolivian altiplano influence the physicochemical composition of the water,
+                resulting in the accumulation of sulfur, boron, arsenic and others. In this way, different human
+                populations in Bolivia are exposed to arsenic causing neurological disorders, respiratory and
+                cardiovascular diseases, as these metals affect the health altering normal human metabolic and
+                biochemical function
+            </p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-2">
+        <div class="container-segundarario con">
+            <div class="scene">
+                <div class="layer">
+                    <img src="imgbanner3/nubes.png" id="nubesb2" class="w-100  move-X " alt="">
+                    <img src="imgbanner3/montañas.png" id="montab2" class="w-100 img2  " data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" alt="">
+                    <img src="imgbanner3/agua.png" id="aguab2 " data-aos="fade-up"
+                        data-aos-anchor-placement="top-center" class="w-100 img2 " alt="">
+                    <img src="imgbanner3/arse.png" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-delay="800" id="arseb2" class="w-100 img2 " alt="">
+                    <!-- <img src="imgbanner3/portada 3 general-ai.png" id="" class="w-100 img2 d-none d-lg-block" alt=""> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-texto">
+        <div class="container py-5">
+            <div class="row">
+
+                <div class="  col-md-8 d-flex justify-content-center align-items-center" style="z-index: 19999;">
+                    <div class="solution">
+                        <h2 class="text-uppercase text-white" data-aos="fade-up">Solution</h2>
+                        <p class="text-white" data-aos="fade-up">After identifying such a dangerous problem for humans,
+                            team Bolivia decided to design, build, and validate a bacterial biosensor that allows the
+                            quantification of arsenic, having the minimum specifications of good performance: short
+                            response time, detection of concentrations as low as 10 ppb, and the specificity for
+                            arsenic. In addition, our biosensor offers an easy result interpretation by generating a
+                            color signal visible to the naked eye. </p>
+                    </div>
+                </div>
+                <div class=" col-md-4 d-flex justify-content-center align-items-center" data-aos="fade-left"
+                    data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                    <img src="arsesolution.png" class="arseWEy" class="w-100" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col-md-4" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                    <img src="borradorarsenitohomepagegeneral.gif" class="arseWEy" class="" alt="">
+                </div>
+
+                <div class=" offset-md-1 col-md-7" style="z-index: 199;" data-aos="fade-up">
+                    <div class="" style="width: 100%; height: 100%; background-color: #cfcfcc;">
+                        <h2 class="text-uppercase text-white" data-aos="fade-up">VIDEO PROMOCIONAL</h2>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-texto fondoblanco">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="offset-md-2 col-md-8">
+
+                                <div style="width: 100%;">
+                                    <h2 class="text-white text-center">Human Practices</h2>
+                                    <p class="text-center text-white mb-5" style="font-size: 20px;">As the Human
+                                        Practices group, we wanted to integrate all social actors involved in water
+                                        quality access, and we carried out diverse activities related to ethics,
+                                        sustainability and safety. Our main objective was to know the problem of arsenic
+                                        contamination at its root, to reach the people affected by it and to propose
+                                        possible solutions. Throughout our journey we were able to learn and become
+                                        aware of the great problem of water pollution. It has been a journey full of
+                                        lessons and we can affirm that our perception about water has changed.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="offset-md-2 col-md-8">
+
+                                <div style="width: 100%;">
+                                    <h2 class="text-white text-center">Inclusivity Award</h2>
+                                    <p class="text-center text-white mb-5" style="font-size: 20px;">Bolivia has
+                                        multicultural people who speak different native indian languages. This situation
+                                        can create a cultural barrier that makes the access to science more challenging
+                                        since native speakers, in a way, are forced to learn spanish in order to become
+                                        knowledgeable in science and technology. To generate a positive impact on
+                                        Bolivian society, we produced educational videos using the most representative
+                                        native languages of the country and disseminate information about synthetic
+                                        biology and biotechnology.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="offset-md-2 col-md-8">
+
+                                <div style="width: 100%;">
+                                    <h2 class="text-white text-center">Education & Communication</h2>
+                                    <p class="text-center text-white mb-5" style="font-size: 20px;">Bolivia has a major
+                                        issue with science communication and therefore, most citizens lack science
+                                        culture. This is why we started activities to engage and inform people about
+                                        biotechnology and synthetic biology. The activities carried out were: Social
+                                        Media content like nfographics, news, podcasts and videos; an educational guide
+                                        to encourage young people to learn about these topics; episodes about biology
+                                        topics for students during the pandemic; CoviGEM to update scientific
+                                        information about COVID-19; podcast ConCiencia to inspire people through stories
+                                        of Bolivian researchers; Journal Club to share biotechnology from scientific
+                                        papers based on eye-catching or controversial topics.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+        </ul>
+
+        <div class="row p-0 m-0 d-flex">
+            <div class="">
+                <ul class="navbar-nav">
+                    <li class="nav-item hover-nav">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            AWARDS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://2021.igem.org/Team:Bolivia/Inclusivity">
+                                    INCLUSIVITY</a></p>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://2021.igem.org/Team:Bolivia/Excellence">EXCELLENCE</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TEAMS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item"
+                                    href="https://2021.igem.org/Team:Bolivia/Collaborations">COLLABORATIONS</a></p>
+                            </li>
+                            <li><a class="dropdown-item" href="https://2021.igem.org/Team:Bolivia/Team">TEAMS</a></p>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://2021.igem.org/Team:Bolivia/Attributions">ATTRIBUTIONS</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PROJECT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item"
+                                    href="https://2021.igem.org/Team:Bolivia/Description">DESCRIPTION</a></p>
+                            </li>
+                            <li><a class="dropdown-item" href="https://2021.igem.org/Team:Bolivia/Design">DESIGN</a></p>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://2021.igem.org/Team:Bolivia/Engineering">ENGINEERNING</a></p>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://2021.igem.org/Team:Bolivia/Contribution">CONTRIBUTION</a></p>
+                            </li>
+                            <li><a class="dropdown-item"
+                                    href="https://2021.igem.org/Team:Bolivia/LaboratoryProtocols">LAB
+                                    PROTOCOLS</a></p>
+                            </li>
+                            <li><a class="dropdown-item" href="https://2021.igem.org/Team:Bolivia/Hardware">HARDWARE</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            HP
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">HUMAN PRACTICES</a></p>
+                            </li>
+                            <li><a class="dropdown-item" href="#">INTEGRATED</a></p>
+                            </li>
+                            <li><a class="dropdown-item" href="#">PROPOSED</a></p>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Education </a></p>
+                            </li>
+                        </ul>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row  p-0 m-0">
+            <div class="col-xs-6 col-md-3 d-flex justify-content-center align-items-center">
+                <img src="T--Bolivia--Añaki.png" width="30%" alt="">
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <img src="T--Bolivia--Bago.png" width="50%" alt="">
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <img src="T--Bolivia--IDT.png" width="50%" alt="">
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <img src="T--Bolivia--ZymoResearch.png" width="40%" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</html>
+
 </body>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    
+    AOS.init();
 </script>
+<script>
+
+    // imagenes baner 1
+    let nube1 = document.getElementById('nube1');
+    let nube2 = document.getElementById('nube2');
+    let monta1 = document.getElementById('monta1');
+    let monta2 = document.getElementById('monta2');
+    let monta3 = document.getElementById('monta3');
+    let montaagua = document.getElementById('montaagua');
+    let montaarse = document.getElementById('montaarse');
+    let montallama = document.getElementById('montallama');
+    let arse = document.getElementById('arse');
+    let titulo = document.getElementById('titulo');
+
+
+    // imagenes baner 2
+
+
+
+    window.addEventListener('scroll', function () {
+        let value = window.scrollY;
+        console.log(value);
+        var ancho = screen.width;
+        if (ancho >= 1400) {
+            if (value <= 350) {
+
+                montaarse.style.top = value * -0.20 + 'px';
+                arse.style.top = value * -0.28 + 'px';
+                montallama.style.top = value * -0.28 + 'px';
+
+                nube1.style.top = value * 0.80 + 'px';
+                nube2.style.top = value * -0.28 + 'px';
+
+                monta1.style.top = value * 0.50 + 'px';
+                monta2.style.top = value * 0.25 + 'px';
+                monta3.style.top = value * -0.10 + 'px';
+                montaagua.style.top = value * 0.25 + 'px';
+                titulo.style.top = value * 1.3 + 'px';
+            }
+            else {
+                return null
+            }
+        } else {
+            return null;
+        }
+
+
+        console.log("asas", ancho);
+
+    })
+
+</script>
+
+
+<script>
+    window.addEventListener('scroll', (e) => {
+        let y = window.scrollY;
+
+        if (y >= 500) {
+            document.getElementById('nav').classList.add('my-nav')
+        } else {
+            document.getElementById('nav').classList.remove('my-nav')
+        }
+    })
+
+    function navBarColor() {
+        document.getElementById('nav').classList.add('my-nav')
+    }
+
+
+</script>
+
 </html>

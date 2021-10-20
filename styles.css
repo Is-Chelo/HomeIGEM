@@ -4,14 +4,122 @@
     box-sizing: border-box;
 }
 
+
+
+:root {
+    --azul   : #00507D;
+    --celeste: #00C7DC;
+    --morado : #7B0068;
+    --verde  : #6DC72A;
+    --font-size-p: 20px ;
+}
+
+
+body {
+    font-family: 'Righteous', cursive;
+    margin     : 0;
+    padding    : 0;
+}
+
+.titulo-principal {
+    margin-top : 2vh;
+    font-size  : 10px;
+    font-weight: 600;
+    font-family:'Righteous', cursive; ;
+}
+
+article,
+section {
+    margin-top: 6em !important;
+
+    margin-bottom: 3em !important;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--font-size-p);
+    line-height: 50px;
+}
+
+
+.nav-item {
+    margin-left: 80px;
+    font-size  : 18px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: var(--celeste) !important;
+}
+
+#nav {
+    background-color: transparent !important;
+}
+
+
+
+.my-nav {
+    background-image: linear-gradient(to right,var(--azul), var(--celeste));
+    opacity         : 0.9;
+    transition      : .3s ease-in-out;
+}
+
+.hover-nav{
+    position: relative;
+}
+.nav-item:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+    left: 0px;
+    bottom: 0px;
+}
+
+.nav-item:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+
+/* HASTA AQUI ES EL BANNER Y NAVBAR */
+
+
+
+
+
+
+.container-imagen{
+    width: 100%;
+    height:70vh;
+    display: flex;
+    position: relative;
+    background-image: url('original.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    
+
 .banner {
     position: relative;
     width   : 100%;
     height  : 100vh;
     overflow: hidden;
 }
+.banner-2 {
+    position: relative;
+    width   : 100%;
+    height  : 100vh;
+    overflow: hidden;
+}
 
-.container {
+.container-principal {
     left            : -10%;
     position        : absolute;
     width           : 120%;
@@ -19,7 +127,15 @@
     background-image: linear-gradient(180deg, #3985b2, #a7ded8, white, white);
 }
 
-.container .scene .layer {
+.container-segundarario {
+    left            : -10%;
+    position        : absolute;
+    width           : 120%;
+    height          : 100vh;
+    background-image: linear-gradient(180deg, #3985b2, white, white);
+}
+
+.con .scene .layer {
     position: absolute;
     top     : 0;
     left    : 0;
@@ -28,7 +144,7 @@
     height: 100vh;
 }
 
-.container .scene .layer img {
+.con .scene .layer img {
     position  : absolute;
     top       : 0;
     left      : 0;
@@ -46,7 +162,7 @@
 
 .moveX {
     animation-name           : movex;
-    animation-duration       : 100s;
+    animation-duration       : 80s;
     animation-timing-function: linear;
     /* animation-delay       : 3s; */
     animation-iteration-count: infinite;
@@ -124,12 +240,53 @@
     }
 }
 
+.section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .banner::before{
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, #3985b2,transparent);
+    z-index: 11;
+} 
+ .banner-2::before{
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, #3985b2,transparent);
+    z-index: 11;
+} 
+
+/* #e8cc703d */
+/* dcf2ef */
+.container-texto{
+    background-color: #3985b2;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* NIEVEEEEEE */
-
- 
-
   .contenedor-nieve {
     display: block;
     width: 100%;
@@ -330,3 +487,133 @@
     }
   }
   
+
+
+  /* =================================== */
+
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.titulo{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}  
+
+h1 {
+  font-family: 'Righteous', cursive;
+  /* animation: bounce 0.5s ease infinite alternate; */
+  margin: auto;
+  font-size: 125px;
+  color: #FFF;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.3);
+ 
+}
+
+/* ANIMATION */
+@keyframes bounce {
+  100% {
+    top: -30px;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 30px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+.img2{
+    z-index: 2;
+}
+
+
+
+/* BANNER  2*/
+.logo{
+    width: 80px;
+    height: 80px;
+    -webkit-animation: rotation 20s infinite linear;
+   z-index: 100;
+   position: absolute;
+   bottom: -101.5%;
+   left: 95px
+}
+
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+
+.arseWEy{
+  width: 30vw;
+}
+.solution{
+    margin-top: 50px;
+    margin-left: 20px;
+    z-index: 1000;
+}
+
+@media(max-width:1024px) {
+  h1 {
+    font-family: 'Righteous', cursive;
+    margin: auto;
+    font-size: 90px;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.3);
+   
+  }
+}
+
+@media(max-width:728px) {
+  h1 {
+    font-family: 'Righteous', cursive;
+    margin: auto;
+    font-size: 75px;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.3);
+   
+  }
+
+}
+@media(max-width:586px) {
+  h1 {
+    font-family: 'Righteous', cursive;
+    margin: auto;
+    font-size: 50px;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.3);
+   
+  }
+}
+@media(max-width:320px) {
+  h1 {
+    font-family: 'Righteous', cursive;
+    margin: auto;
+    font-size: 30px;
+    color: #FFF;
+    text-align: center;
+    line-height: 100px;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.3);
+   
+  }
+}
+
+
+
+
+/* **************************** */
+.fondoblanco{
+  padding-bottom: 200px;
+}
